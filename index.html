@@ -12,14 +12,33 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="container">
+    <main class="container">
       <h1>Sanningen om Samus</h1>
       <img
+        tabindex="1"
         src="/images/samus.webp"
-        alt="Anime-stil illustration av Samus Aran i vit och cyan Zero Suit, med långt blont hår i ponytail, som står självsäkert i en upplyst sci-fi-korridor med neonblå belysning och metallväggar."
+        alt="Illustration i anime-stil av Samus Aran i Zero Suit som står självsäkert i en sci-fi-korridor"
       />
-      <p>Samus kan inte krypa. :(</p>
-      <button>Klicka.</button>
-    </section>
+      <div role="status" aria-live="polite" aria-atomic="true">
+        <p id="para">Samus kan inte krypa. 😞</p>
+      </div>
+      <button
+        id="button"
+        type="button"
+        aria-label="Avslöja sanningen om hur Samus rör sig."
+        tabindex="4"
+      >
+        Klicka.
+      </button>
+    </main>
+    <footer id="footer">
+      <a
+        href="https://www.plugin-alliance.com/products/bx_limiter-true-peak"
+        target="_blank"
+        rel="noopener noreferrer"
+        tabindex="3"
+        >Klicka för att öppna på ny sida.</a
+      >
+    </footer>
   </body>
 </html>

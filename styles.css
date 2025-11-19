@@ -90,11 +90,36 @@ button {
 
 
 button:hover,
-button:focus,
+button:focus-visible,
 button:active {
     background-color: var(--able-text);
     color: var(--able-gray-30);
     border: 1px solid var(--able-gray-30);
     outline: none;
     box-shadow: none;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    min-height: 150px;         
+    
+}
+
+#footer a {
+    display: inline-flex;         
+    justify-content: center;
+    align-items: center;
+    padding: 5px;           
+    color: var(--able-gray-30);
+    text-decoration: none;
+    border-radius: 5px; 
+    text-decoration: underline;      
+    
+}
+
+#footer a:hover {
+    color: var(--able-text);
+    background-color: var(--able-gray-30);
 }
